@@ -13,7 +13,7 @@ var notificationRouter = require('./routes/notification.router')
 var userContact = require('./routes/userContact.router')
 
 var app = express();
-db.createConnection()
+db.dbConnection()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
